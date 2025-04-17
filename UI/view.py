@@ -58,8 +58,11 @@ class View(ft.UserControl):
 
         #TextOutput
         self._txtOut = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=False)
+        self.txt_result = ft.ListView(expand=1, spacing=10, padding=20, auto_scroll=True)
+        self._page.controls.append(self.txt_result)
 
         self._page.add(self._txtOut)
+
 
         self._page.update()
 
